@@ -3,6 +3,6 @@
 
 int main() {
     printf("Hello, World!\n");
-    dtmf();
+    printf("%d ",dtmf(5));
     return 0;
 }

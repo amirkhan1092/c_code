@@ -4,8 +4,20 @@
 
 //#include<stdio.h>
 
-int dtmf()
+int dtmf(n)
 {
-    printf("Mam i love you ");
-    return 0;
+    int flg=0;
+    for (int i = 2; i < n; ++i) {
+        if (n%i == 0)
+        {
+            flg = 1;
+            break;
+        }
+    }
+    if (flg)
+        return 1;
+    else
+        return 0;
+
+
 }
